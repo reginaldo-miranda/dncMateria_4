@@ -110,6 +110,10 @@ body {
   .tertiary-color{
     background-color: #F6F6F6
   }
+
+  .grey-1-color{
+    color: #4D5053;
+  }
   /* grid */
   .container{
     margin: 0 auto;
