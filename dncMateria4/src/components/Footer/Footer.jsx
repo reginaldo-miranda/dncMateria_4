@@ -18,8 +18,8 @@ function Footer(){
                 <div className="d-flex jc-space-between">
                     <div className="footer-logo-col">
                         <img src={logo} alt="Logo"/>
-                        <p className="grey-1-color">A escola que prepara você para as profissões em <br>
-                        </br> alta no mercado de trabalho.</p>
+                        <p className="grey-1-color">A escola que prepara você para as profissões em 
+                         alta no mercado de trabalho.</p>
                         <div className=" social-links">
 
                              <a href="https://www.facebook.com/" target="_blank" >
@@ -34,27 +34,25 @@ function Footer(){
                             <a href="https://www.twitter.com/" target="_blank" >
                                 <img src={twitter}/>
                             </a>
-                            
-                        </div>
-                     
+                         </div>
                     </div>
                     <div className ='d-flex'>
-                           <div className="footer-col">
+                         <div className="footer-col">
                             <h3>Pages</h3>
-                                 <ul>
-                                      <li><Link to="/">Home</Link></li>
-                                      <li><Link to="/about">About</Link></li>
-                                      <li><Link to="/projects">Projects</Link></li>
-                                      <li><Link to="/contact">Contact</Link></li>
-                                  </ul>
-                           </div>
-                                <div className='footer-col'>
-                                    <h3>Contact</h3>
-                                    <p className='grey-1-color'>R. Justino Cobra, 61 – Vila Ema | São José dos Campos – SP | CEP 12243-030</p> 
-                                    <p className='grey-1-color'>suporte@escoladnc.com.br</p>
-                                    <p className='grey-1-color'>(19) 99187-4342</p>
-                                </div>
-                        </div>
+                            <ul>
+                               <li><Link to="/">Home</Link></li>
+                               <li><Link to="/about">About</Link></li>
+                               <li><Link to="/projects">Projects</Link></li>
+                               <li><Link to="/contact">Contact</Link></li>
+                            </ul>
+                         </div>
+                            <div className='footer-col'>
+                               <h3>Contact</h3>
+                               <p className='grey-1-color'>R. Justino Cobra, 61 – Vila Ema | São José dos Campos – SP | CEP 12243-030</p> 
+                               <p className='grey-1-color'>suporte@escoladnc.com.br</p>
+                               <p className='grey-1-color'>(19) 99187-4342</p>
+                            </div>
+                    </div>
                    
                 </div>
                 <div className='d-flex jc-space-between footer-copy'>
