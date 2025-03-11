@@ -1,0 +1,16 @@
+.button{
+ border-radius: 18px;
+ border: none;
+ column-gap: 10px;  
+ cursor: pointer;
+ display: flex;
+ font-size: 18px;
+ font-weight: 600;
+ padding: 25px 50px;
+ transition: background-color 0.3s ease;
+}
+
+/* primary cor azul */
+.button.primary{
+    
+}
