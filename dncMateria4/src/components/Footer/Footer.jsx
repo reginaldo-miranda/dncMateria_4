@@ -35,8 +35,27 @@ function Footer(){
                             </a>
                             
                         </div>
+                     
                     </div>
+                    <div className='d-flex'>
+                           <div className='footer-col' >
+                            <h3>Pages</h3>
+                                 <ul className="d-flex">
+                                      <li><Link to="/">Home</Link></li>
+                                      <li><Link to="/about">About</Link></li>
+                                       <li><Link to="/projects">Projects</Link></li>
+                                     <li><Link to="/contact">Contact</Link></li>
+                                  </ul>
+                           </div>
+                        </div>
                    
+                </div>
+                <div className='d-flex jc-space-between footer-copy'>
+                    <p className='grey-1-color'>Copyright © DNC - 2024</p>
+                    <div className='langs-area d-flex'>
+                        <img src={brazilLogo} />
+                        <img src={usaLogo} />
+                    </div>
                 </div>
                 
             </div>
