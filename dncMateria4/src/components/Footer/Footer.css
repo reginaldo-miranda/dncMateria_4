@@ -2,18 +2,19 @@ footer-logo-col{
     max-width: 340px;
     width: 100%;
 }
-footer-col{
+.footer-col{
     margin: 0;
     max-width: 260px;
     width: 100%;
 }
-footer-col ul{
-    text-align: center;
+.footer-col ul{
+
     margin: 0;
     padding: 0;
 }
 
-footer-col li{
+footer-col ul {
+
     margin: 0 0 25px 0;
 }
 
@@ -30,19 +31,22 @@ footer a , .footer p{
 }
 footer a {
    text-decoration: none;
-   
+ 
 }
+
 footer a:hover{
    text-decoration: #0C70F2; 
 }
+
 footer .social-links a{
     margin: 25px 40px 0 0 ;
+
 }
 .footer-copy{
     margin: 155px 0 50px 0;
 }
 
-.footer-copy .largs-area{
+.footer-copy .langs-area{
     column-gap: 23px;
 }
 
