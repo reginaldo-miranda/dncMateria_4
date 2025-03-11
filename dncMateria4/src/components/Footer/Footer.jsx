@@ -5,10 +5,11 @@ import './Footer.css'
 import logo from '../../assets/dnc-logo.svg'
 import brazilLogo from '../../assets/brazil-icons.svg'
 import usaLogo from '../../assets/usa_icons.svg'
-import facebook from '../../assets/facebbok_icons.svg'
+import facebook from '../../assets/facebook.svg'
 import instagran from '../../assets/instagran.svg'
 import linkedin from '../../assets/linkdin.svg'
 import twitter from '../../assets/twitter.svg'
+//import twitter from '../../assets/twitter.svg'
 
 function Footer(){
     return (

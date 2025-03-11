@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 
 //assets
-import './header.css'
+import './Header.css'
 import logo from '../../assets/dnc-logo.svg'
 
 function Header(){
