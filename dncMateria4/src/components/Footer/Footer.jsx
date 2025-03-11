@@ -17,7 +17,7 @@ function Footer(){
             <div className="container">
                 <div className="d-flex jc-space-between">
                     <div className="footer-logo-col">
-                        <img src={logo} alt="Logo"/>
+                        <img src={logo} className='footer-logo' alt="Logo"/>
                         <p className="grey-1-color">A escola que prepara você para as profissões em 
                          alta no mercado de trabalho.</p>
                         <div className=" social-links">
