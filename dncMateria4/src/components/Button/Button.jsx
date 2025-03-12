@@ -2,13 +2,14 @@
 
 // assets
 import './Button.css';
+import whiteArrow from '../../assets/whiteArrow.svg'
 
 
 function Button({ arrow, buttonStyle, loading, children, ...props }){
 
     return (
         <button className={`button ${buttonStyle}`} {...props}>
-            {children}
+            {children} {arrow && <img src={whiteArrow} />}
         </button>
     )
 }

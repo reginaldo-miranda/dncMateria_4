@@ -8,7 +8,7 @@ function Home(){
           <Header/>
           <h1>Home</h1>
           <p>Subtitle</p>
-          <Button buttonStyle="secundary" >Ola</Button>
+          <Button buttonStyle="secundary" arrow >Ola</Button>
           <Footer/>
         </>
     )
