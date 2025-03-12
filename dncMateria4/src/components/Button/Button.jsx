@@ -1,10 +1,13 @@
 
 
 // assets
-import './Button.css'
-function Button(arrow, buttonStyle, loading, children, ...props  ){
+import './Button.css';
+
+
+function Button({ arrow, buttonStyle, loading, children, ...props }){
+
     return (
-        <button className={`button ${buttonStyle}`}>
+        <button className={`button ${buttonStyle}`} {...props}>
             {children}
         </button>
     )

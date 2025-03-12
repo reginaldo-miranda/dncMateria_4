@@ -1,3 +1,4 @@
+import Button from "../components/Button/Button";
 import Header from "../components/header/Header";
 import Footer from "../components/Footer/Footer";
 
@@ -7,6 +8,7 @@ function Home(){
           <Header/>
           <h1>Home</h1>
           <p>Subtitle</p>
+          <Button buttonStyle="secundary" >Ola</Button>
           <Footer/>
         </>
     )
