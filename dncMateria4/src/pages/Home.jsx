@@ -10,7 +10,7 @@ function Home(){
           <h1>Home</h1>
           <p>Subtitle</p>
           <Button buttonStyle="secundary" arrow >Ola</Button>
-          <Banner title="Home" />
+          <Banner title="Home" image='about.png'/>
           <Footer/>
         </>
     )
