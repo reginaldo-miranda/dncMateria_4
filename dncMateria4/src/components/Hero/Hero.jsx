@@ -7,8 +7,9 @@ function Hero(){
         <div className="hero d-flex al-center">
 
            <div className='hero-text'>
-        
-            <Link>
+                <h1>Let Your HomeBe Unique</h1>
+                <p>There are many variations of the passages of lorem Ipsum fromavailable, majority</p>
+                <Link>
                 <Button buttonStyle="secundary" arrow>
                     Get Started 
                 </Button>
