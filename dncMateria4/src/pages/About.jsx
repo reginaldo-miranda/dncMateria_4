@@ -1,3 +1,4 @@
+import AboutText from "../components/aboutText/aboutText";
 import Banner from "../components/Banner/Banner";
 import Header from "../components/header/Header";
 import Footer from "../components/Footer/Footer";
@@ -9,7 +10,7 @@ function About(){
          <Header/>
           < Banner title="About" image="about.png"/>
           <div className="container">
-              -----------
+              <AboutText />
           </div>
           <Footer/>
         </>
