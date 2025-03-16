@@ -1,5 +1,6 @@
 import './ProjectsList.css'
 
+
 // assets
 import likedFilled from '../../assets/like_ok.svg'
 import like from '../../assets/likeNaoGostei.svg'
@@ -19,49 +20,49 @@ function projectsList(props){
                     <div className='thumb .tertiary-background'></div>
                     <h3>Joao Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={like} />
+                    <img src={like} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb .tertiary-background'></div>
                     <h3>Joao Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={like} />
+                    <img src={like} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb .tertiary-background'></div>
                     <h3>Joao Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={like} />
+                    <img src={like} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb .tertiary-background'></div>
                     <h3>Joao Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={like} />
+                    <img src={like} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb .tertiary-background'></div>
                     <h3>Joao Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={like} />
+                    <img src={like} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb .tertiary-background'></div>
                     <h3>Joao Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={like} />
+                    <img src={like} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb .tertiary-background'></div>
                     <h3>Joao Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={like} />
+                    <img src={likedFilled} height="20px" />
                 </div>
                 <div className='project-card d-flex jc-center al-center fd-column'>
                     <div className='thumb .tertiary-background'></div>
                     <h3>Joao Silva</h3>
                     <p>BH, Brasil</p>
-                    <img src={like} />
+                    <img src={like}  height="20px"/>
                 </div>
 
            </div>
