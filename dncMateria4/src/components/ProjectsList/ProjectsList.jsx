@@ -8,14 +8,15 @@ import like from '../../assets/likeNaoGostei.svg'
 
 //utilis
 import { getApiData } from '../../services/apiServices'
+import Projects from '../../pages/Projects.jsx'
 
-function projectsList(props){
+function projectsList(){
     const [projects, setProjects] = useState()
 
     useEffect(() => {
-      const fetchData = async () =>{
+      const fetchData = async () => {
         try {
-            const projectsResponse = await getApiData(projects)
+            const projectsResponse = await getApiData('projects')
             setProjects(projectsResponse)
         } catch  {
              setProjects([])
@@ -33,55 +34,19 @@ function projectsList(props){
               <p>It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points. </p>
            </div>
            <div className='project-grid'>
-                <div className='project-card d-flex jc-center al-center fd-column'>
-                    <div className='thumb .tertiary-background'></div>
-                    <h3>Joao Silva</h3>
-                    <p>BH, Brasil</p>
-                    <img src={like} height="20px" />
-                </div>
-                <div className='project-card d-flex jc-center al-center fd-column'>
-                    <div className='thumb .tertiary-background'></div>
-                    <h3>Joao Silva</h3>
-                    <p>BH, Brasil</p>
-                    <img src={like} height="20px" />
-                </div>
-                <div className='project-card d-flex jc-center al-center fd-column'>
-                    <div className='thumb .tertiary-background'></div>
-                    <h3>Joao Silva</h3>
-                    <p>BH, Brasil</p>
-                    <img src={like} height="20px" />
-                </div>
-                <div className='project-card d-flex jc-center al-center fd-column'>
-                    <div className='thumb .tertiary-background'></div>
-                    <h3>Joao Silva</h3>
-                    <p>BH, Brasil</p>
-                    <img src={like} height="20px" />
-                </div>
-                <div className='project-card d-flex jc-center al-center fd-column'>
-                    <div className='thumb .tertiary-background'></div>
-                    <h3>Joao Silva</h3>
-                    <p>BH, Brasil</p>
-                    <img src={like} height="20px" />
-                </div>
-                <div className='project-card d-flex jc-center al-center fd-column'>
-                    <div className='thumb .tertiary-background'></div>
-                    <h3>Joao Silva</h3>
-                    <p>BH, Brasil</p>
-                    <img src={like} height="20px" />
-                </div>
-                <div className='project-card d-flex jc-center al-center fd-column'>
-                    <div className='thumb .tertiary-background'></div>
-                    <h3>Joao Silva</h3>
-                    <p>BH, Brasil</p>
-                    <img src={likedFilled} height="20px" />
-                </div>
-                <div className='project-card d-flex jc-center al-center fd-column'>
-                    <div className='thumb .tertiary-background'></div>
-                    <h3>Joao Silva</h3>
-                    <p>BH, Brasil</p>
-                    <img src={like}  height="20px"/>
-                </div>
-
+                {
+                    Projects.map({project}) => (
+                      <div className='project-card d-flex jc-center al-center fd-column' key={'project.id'}>
+                             <div className='thumb .tertiary-background'
+                               style={{backgroundImage: `url(${projects.thumb})`}}
+                             ></div>
+                             <h3>{projects.title}</h3>
+                             <p>{projects.subtitle} </p>
+                             <img src={like} height="20px" />
+                      </div>  
+                ))
+                }
+              
            </div>
         </div>
     )

@@ -1,6 +1,7 @@
 export const getApiData = async (endpoit, params) => {
     try{
-        const url = new URL(`https://dnc-react-api.vercel.app/files/${endpoit}`)
+       // const url = new URL(`https://dnc-react-api.vercel.app/files/${endpoit}`)
+        const url = new URL(`https://dnc-react-api.vercel.app/files/projects`)
         const response = await fetch(url, {
             method:'GET',
         })
