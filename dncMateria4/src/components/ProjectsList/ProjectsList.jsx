@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import './ProjectsList.css'
 
 
@@ -5,9 +6,25 @@ import './ProjectsList.css'
 import likedFilled from '../../assets/like_ok.svg'
 import like from '../../assets/likeNaoGostei.svg'
 
-
+//utilis
+import { getApiData } from '../../services/apiServices'
 
 function projectsList(props){
+    const [projects, setProjects] = useState()
+
+    useEffect(() => {
+      const fetchData = async () =>{
+        try {
+            const projectsResponse = await getApiData(projects)
+            setProjects(projectsResponse)
+        } catch  {
+             setProjects([])
+        }
+    
+    }
+       fetchData()
+    }, [])
+
     return (
         <div className="project-section">
 
