@@ -11,12 +11,32 @@ function ContactForm(){
               message:''
        })        
        const [isFormValid, setIsFormValid] = useState(false)
+       const [formSubmitLoading, setformSubmitLoading ] = useState(false)
+       const [formSubimtted, setFormSubmitted] = useState(false)
 
        const handleSubmit = async (e) => {
               
               e.preventDefault()
               if(isFormValid){
-                  console.log("valid")
+                 setformSubmitLoading(true)
+                 try{
+                     const response = await fetch('https://api.web3forms.com/submit',{
+                            method: 'POST',
+                            headers:{
+                                   'Content-Type': 'application/json'
+                            },
+                            body: JASON.stringify({...formData, acces_key: "9754f4a0-4cb4-48cb-b9c9-50e5d5867bc3 "})
+                     })
+                     if(response.ok){
+                        setFormSubmitted(true)
+                     }else {
+                        alert('Erro ao enviar !')
+                     }
+                     
+                 }catch (e){
+                    alert('Erro: ', e)
+              }finally{
+                setformSubmitLoading(false)
               }
        }
 
