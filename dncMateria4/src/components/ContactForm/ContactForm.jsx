@@ -11,34 +11,36 @@ function ContactForm(){
               message:''
        })        
        const [isFormValid, setIsFormValid] = useState(false)
-       const [formSubmitLoading, setformSubmitLoading ] = useState(false)
-       const [formSubimtted, setFormSubmitted] = useState(false)
+       const [formSubmitLoading, setFormSubmitLoading ] = useState(false)
+       const [formSubmitted, setFormSubmitted] = useState(false)
 
        const handleSubmit = async (e) => {
               
               e.preventDefault()
               if(isFormValid){
-                 setformSubmitLoading(true)
+                 setFormSubmitLoading(true)
                  try{
                      const response = await fetch('https://api.web3forms.com/submit',{
                             method: 'POST',
                             headers:{
                                    'Content-Type': 'application/json'
                             },
-                            body: JASON.stringify({...formData, acces_key: "9754f4a0-4cb4-48cb-b9c9-50e5d5867bc3 "})
-                     })
+                            body: JSON.stringify({...formData, access_key: "75b2ea45-daf4-42a6-b174-a61dc9d733fe"})
+                                  
+                        })
                      if(response.ok){
                         setFormSubmitted(true)
                      }else {
                         alert('Erro ao enviar !')
                      }
                      
-                 }catch (e){
-                    alert('Erro: ', e)
-              }finally{
-                setformSubmitLoading(false)
-              }
+                }catch (e){
+                    alert('Erro: ', + e.message)
+                }finally{
+                    setFormSubmitLoading(false)
+                }
        }
+    }
 
        useEffect(() => {
 
@@ -105,8 +107,9 @@ function ContactForm(){
                             </div>       
 
                             <div className='al-center d-flex jc-end form-group'>
+                                {formSubmitted && <p className='text-primary'>Sucesso</p>}
                                 <Button type='submit' buttonStyle="secundary" 
-                                disabled={!isFormValid} >
+                                disabled={!isFormValid || formSubmitLoading} >
                                    Enviar
                                 </Button>      
                             </div>      
