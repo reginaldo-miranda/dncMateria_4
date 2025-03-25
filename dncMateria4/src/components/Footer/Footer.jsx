@@ -1,4 +1,4 @@
-/* import { useContext } from 'react';
+import { useContext } from 'react';
 import {Link} from 'react-router-dom';
 
 //assets
@@ -7,8 +7,9 @@ import logo from '../../assets/dnc-logo.svg'
 import brazilLogo from '../../assets/brazil-icons.svg'
 import usaLogo from '../../assets/usa_icons.svg'
 import facebook from '../../assets/facebook.svg'
-import instagran from '../../assets/instagran.svg'
-import linkedin from '../../assets/linkdin.svg'
+import instagram from '../../assets/instagram.svg'
+
+import linkedin from '../../assets/linkedin.svg'
 import twitter from '../../assets/twitter.svg'
 
 //context
@@ -17,7 +18,7 @@ import Button from '../Button/Button';
 
 function Footer(){
     const appContext = useContext(AppContext)
-    const changelanguage = (country) => {
+    const changeLanguage = (country) => {
         appContext.setLanguage(country)
     }
     return (
@@ -30,11 +31,11 @@ function Footer(){
                          alta no mercado de trabalho.</p>
                         <div className=" social-links">
 
-                             <a href="https://www.facebook.com/" target="_blank" >
+                             <a href="https://www.facebook.com/" target="_blank" > 
                                  <img src={facebook}/>
                             </a>
                             <a href="https://www.instagram.com/" target="_blank" >
-                                <img src={instagran}/>
+                                <img src={instagram}/>
                             </a>
                             <a href="https://www.linkedin.com/" target="_blank" >
                                <img src={linkedin}/>
@@ -66,10 +67,10 @@ function Footer(){
                 <div className='d-flex jc-space-between footer-copy'>
                     <p className='grey-1-color'>Copyright © DNC - 2024</p>
                     <div className='langs-area d-flex'>
-                        <Button buttonStyle="unstyled" onClick={() => changelanguage('br')}>
+                        <Button buttonStyle="unstyled" onClick={() => changeLanguage('br')}>
                               <img src={brazilLogo} height="29px" />
                         </Button>
-                        <Button buttonStyle="unstyled" onClick={() => changelanguage('en')} >
+                        <Button buttonStyle="unstyled" onClick={() => changeLanguage('en')} >
                               <img src={usaLogo} height="29px" />
                         </Button>
                      
@@ -82,8 +83,8 @@ function Footer(){
       
     )
 }
-export default Footer;  //export the component */
-
+export default Footer;  //export the component 
+/*
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -166,4 +167,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+export default Footer; */
